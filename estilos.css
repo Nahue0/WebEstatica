@@ -1,0 +1,35 @@
+
+body{
+    height: 1000px;
+    background-image: url(/imagenes/FondoBody.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contenedorFlex{
+    /*el Height uso px porque no importa el tema del responsive por ahora*/
+    height: 500px;
+    background-color: rgba(223, 111, 7, 0.623);
+    
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content:center;
+    flex-wrap: wrap;
+}
+
+.circulos{
+    background-color:hwb(251 7% 10% / 0.849) ;
+    border-radius: 50%;
+
+    /*Usamos px para que en ningun momento se modifique su valor*/
+    width: 100px;
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fondo{
+    height: 200px;
+    }
