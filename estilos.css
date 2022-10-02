@@ -5,10 +5,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.contenedor{
+    display: flex;
+    background-color:  rgba(223, 111, 7, 0.623);
+
+}
 .contenedorFlex{
     /*el Height uso px porque no importa el tema del responsive por ahora*/
     height: 500px;
-    background-color: rgba(223, 111, 7, 0.623);
     
     display: flex;
     flex-direction:row;
@@ -27,9 +31,26 @@ body{
     
     display: flex;
     justify-content: center;
-    
+    transition: width 1s,height 1s;
 }
-
-.fondo{
+.circulos:hover{
+    width: 110px;
+    height: 110px;
+}
+.titulo{
     height: 200px;
     }
+
+
+button{
+    align-self:center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(53, 50, 50, 0.815);
+    transition: width 1s, height 1s;
+    
+}
+button:hover{
+    width: 110px;
+    height: 110px;
+}
