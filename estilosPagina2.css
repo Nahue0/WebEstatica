@@ -1,14 +1,14 @@
 /*--------------- ETIQUETAS ------------------*/
 body{
     background-image: url(./imagenes/windowsGoku.webp);
-    background-size:100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 
 table {
-    align-items: center;
-    height: 5cm;
+    height: 10cm;
+    width: 20cm;
     background: rgba(63, 141, 231, 0.63) ;
     color: black;
 }
@@ -24,7 +24,8 @@ tr{
 /*--------------- Clases ------------------*/
 .contenedor{
     display: flex;
-    
+    align-items: center;
+    justify-content: space-around;
 }
 .superior{
     height: 4cm;
@@ -32,8 +33,14 @@ tr{
  
 
 /*--------------- ID ------------------*/
- #titulo{
+#titulo{
     display: block;
     margin: auto;
     width: 300px;
+    transition: 0.5s;
+}
+#titulo:hover {
+    display: block;
+    margin: auto;
+    width: 400px;
 }

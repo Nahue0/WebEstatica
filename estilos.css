@@ -5,7 +5,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     margin-bottom: 0;
 }
 
@@ -27,7 +26,7 @@ button:hover{
 /*--------------- CLASES ------------------*/
 .contenedor{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color:  rgba(223, 111, 7, 0.623);
     width: 100%;
@@ -60,13 +59,6 @@ button:hover{
     width: 350px;
     height: 350px;
     transform: rotate(360deg);
-}
-.moverAtras{
-    float: right;
-
-}
-.moverAdelante{
-    float: left;
 }
 
 .pieDePagina{
@@ -102,7 +94,6 @@ button:hover{
     width: 1cm;
     height: 1cm;
     border-radius: 30px;
-    
 }
 
 #imagenDePie{
@@ -115,12 +106,37 @@ button:hover{
     margin: auto;
     width: 300px;
 }
+
 #marginOf{
     text-align: center;
     margin-bottom: 0;
 }
-#mayorMenor{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 300%;
 
+#left-triangle {
+    width: 0;
+    height: 0;
+    border-right: 50px solid hwb(251 7% 10% / 0.849);
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+    transition: 0.5s;
 }
+#left-triangle:hover {
+    border-right: 75px solid hwb(251 7% 10% / 0.849);
+    border-bottom: 75px solid transparent;
+    border-top: 75px solid transparent;
+}
+
+#right-triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid hwb(251 7% 10% / 0.849);
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+    transition: 0.5s;
+}
+#right-triangle:hover {
+    border-left: 75px solid hwb(251 7% 10% / 0.849);
+    border-bottom: 75px solid transparent;
+    border-top: 75px solid transparent;
+}
+

@@ -2,8 +2,8 @@ $(document).ready(function(){
     let lista = $('.circulos');
     let i = 0;
     console.log(lista.length);    
-    let siguiente = $('#adelante');
-    let atras = $('#atras');
+    let siguiente = $('#right-triangle');
+    let atras = $('#left-triangle');
     
 
     $(lista).hide();
@@ -24,7 +24,7 @@ $(document).ready(function(){
         }
     );
 
-    $('#atras').click(
+    $(atras).click(
         function(){
                 if(i > 0){
                     i = i - 1;
