@@ -1,12 +1,29 @@
+/*--------------- ETIQUETAS ------------------*/
 body{
     /*width: 100%;*/
     background-image: url(./imagenes/FondoBody.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    margin-bottom: 0;
+}
+
+button{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(53, 50, 50, 0.815);
+    transition: width 0.25s,height 0.25s;
+}
+button:hover{
+    width: 200px;
+    height: 200px;
 }
 
 
+
+/*--------------- CLASES ------------------*/
 .contenedor{
     display: flex;
     justify-content: space-between;
@@ -31,16 +48,16 @@ body{
     background-color:hwb(251 7% 10% / 0.849) ;
     border-radius: 50%;
     /*Usamos px para que en ningun momento se modifique su valor*/
-    width: 100px;
-    height: 100px;  
+    width: 300px;
+    height: 300px;  
     display: flex;
     justify-content: space-between;
-    margin-left: 5px;
+    
     transition: width 0.25s,height 0.25s;
 }
 .circulos:hover{
-    width: 110px;
-    height: 110px;
+    width: 350px;
+    height: 350px;
 }
 .moverAtras{
     float: right;
@@ -49,23 +66,47 @@ body{
 .moverAdelante{
     float: left;
 }
+
+.pieDePagina{
+    background-color: rgb(255, 84, 5);
+    height: 400px;
+    text-align: center;
+    margin-top: 10%;
+    border-top: 3px solidrgb(255, 84, 5);
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+}
+
+
+/*--------------- ID ------------------*/
+#imagenContenido{
+    width: 1cm;
+    height: 1cm;
+    border-radius: 30px;
+}
+
+#imagenDePie{
+    width: 5cm;
+    height: 5cm;
+}
+
 #titulo{
     display: block;
     margin: auto;
     width: 300px;
 }
-button{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    background-color: rgba(53, 50, 50, 0.815);
-    transition: width 0.25s,height 0.25s;
-}
-button:hover{
-    width: 200px;
-    height: 200px;
+#marginOf{
+    text-align: center;
+    margin-bottom: 0;
 }
 #mayorMenor{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 300%;
+
 }
