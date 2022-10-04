@@ -1,37 +1,91 @@
 /*--------------- ETIQUETAS ------------------*/
 body{
-    background-image: url(./imagenes/windowsGoku.webp);
+    
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
 table {
-    height: 10cm;
-    width: 20cm;
     background: rgba(63, 141, 231, 0.63) ;
-    color: black;
 }
 
 td{
     background: rgba(27, 65, 187, 0.603);
     color: black;
 }
-tr{
-}
+
+
  
 
 /*--------------- Clases ------------------*/
+.background{
+    background-image: url(./imagenes/windowsGoku.webp);
+    
+}
 .contenedor{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-.superior{
-    height: 4cm;
-}
- 
+    justify-content:flex-start;
+    
 
+}
+.contenedor-tabla{
+    display: flex;
+    flex-direction: column;
+    gap : 20px
+    
+}
+
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    box-shadow: 0 0 20px #333;
+    border: 3px solid rgba(16, 209, 223, 0);
+    border-radius: 30px;
+    padding: 10px;
+}
+.table-tittle{
+    grid-column-start:1 ;
+    grid-column-end: 7;
+    background-color: rgba(0, 38, 255, 0.589);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(16, 209, 223, 0);
+    border-radius: 30px;
+    
+}
+.table-content, .table-haddler{
+    display: flex;
+    justify-content: center;
+    border-color: black;
+}
+
+.table-haddler{
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.table-content{
+    font-size: 1.1em;
+}
+
+.table-description, p{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+}
+.mostrar{
+    background-color: rgb(0, 162, 255);
+    width: 60px;
+    height: 30px;
+    border: 3px solid rgb(16, 209, 223);
+    border-radius: 30px;
+}
 /*--------------- ID ------------------*/
 #titulo{
     display: block;
@@ -44,3 +98,11 @@ tr{
     margin: auto;
     width: 400px;
 }
+#oscuro{
+    text-align: center;
+    font-size:large;
+    filter: brightness(3);
+    background-color: aqua;
+}
+
+
