@@ -17,7 +17,6 @@ $(document).ready(function(){
         if($(texto[1]).is(':visible')){
             $(texto[1]).hide();
         }else{
-            
             $(texto).hide();
             $(texto[1]).show();
         }
@@ -26,13 +25,9 @@ $(document).ready(function(){
     $(mostrar[2]).on('click',function(){
         if($(texto[2]).is(':visible')){
             $(texto[2]).hide();
-            $(gokuNube).show();
-            $('body').css('background-image','url(./imagenes/windowsGoku.webp)');
         }else{
             $(texto).hide();
             $(texto[2]).show();
-            $(gokuNube).hide();
-            $('body').css('background-image','url(./imagenes/peleas/gokuVsVegetta.jpg)');
         }
     });
 
