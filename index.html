@@ -5,47 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script defer src="./java.js"></script>
-    <script defer src="./practica.js"></script>
+    <!-- <script defer src="./java.js"></script> -->
+    <script defer src="./principal-cuadros.js"></script>
     <title>Dragon Ball Battles!</title>
     
 </head>
-<body>
+<body onload="cargaPrincipal()">  
+    
     <div style="height: 150px ;"><img id= "titulo" src="./imagenes/home-logo.png" alt="Title"></div>
     <div class="contenedor">
         
-        <div id="left-triangle"></div>
+        <div id="left-triangle" > </div>
             <div id="contenedorFlex" class="contenedorFlex">
             
-            <a href="goku.html">
-                <div class="circulos">
+            <a>
+                <div class="circulos" id="circulos">
                     <img src="./imagenes/iconos/Goku.webp" alt="Goku">
                     
                 </div>
             </a>
-            <a href="Vegeta.html"  id="cero" >
+            <a >
                 <div class="circulos">
                     <img src="./imagenes/iconos/vegetta.png" alt="Vegeta">
                 </div>            
             </a>
-            <a href="Vegeta.html" id="uno">
+            <a >
                 <div class="circulos">
                     <img src="./imagenes/iconos/Gohan.webp" alt="Gohan">
                 </div>
             </a>
-            <a href="Freezer.html">
+            <a >
                 <div class="circulos">
                     <img src="./imagenes/iconos/freezer.png" alt="Freezer">
                 </div>
             </a>
-            <a href="Cell.html">
+            <a>
                 <div class="circulos">
                     <img src="./imagenes/iconos/cell.png" alt="Cell">
                 </div>
             </a>
         </div>
-        <div id="right-triangle"></div>
+        <div id="right-triangle" ></div>
     </div>
     <footer class="pieDePagina">
         <div >

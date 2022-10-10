@@ -1,46 +1,163 @@
 [{
     "id":"Batallas De Goku",
-    "description": [
-        {"id": ["Goku vs Vegeta","30","33","Vegeta","https://www.youtube.com/watch?v=cpmga78A2NY&ab_channel=LucasSaiyajinZ","Goku y Vegeta pelean por primera vez, empezando una rivalidad que durará toda la serie"]},
-        {"id": ["GokuvsFreezer","86","105","Goku","https://www.youtube.com/watch?v=RSEu2VDxi9Q&ab_channel=RubyFroste","Goku y Freezer se enfrentan por primera vez en el planeta Namekusei"]},
-        {"id": ["GokuvsCell Perfecto","177","180","Cell","https://www.youtube.com/watch?v=NT8_LzMBFVc&ab_channel=gokuultrainstinto","Goku y Cell se enfrentan en el torneo de Cell"]},
-        {"id": ["GokuvsMajin Vegeta","229","233","Inconclusa","https://www.youtube.com/watch?v=AhRJ2lgmHXA&ab_channel=Facu","Goku y Majin Vegeta se enfrentan nuevamente"]},
-        {"id": ["GokuvsBoo Pequeño","279","286","Goku","https://www.youtube.com/watch?v=rrOyO9uLlZk&ab_channel=WORDDELANIME","Goku y Boo pequeño pelean en el planeta sagrado"]}
-    ]
-    
-    
+    "infoDeFila": [
+        {
+		"integrantes": "Goku vs Vegeta",
+		"inicio": "30",
+		"fin": "33",
+		"ganador": "Vegeta",
+		"link": "https://www.youtube.com/watch?v=cpmga78A2NY&ab_channel=LucasSaiyajinZ",
+		"descripcion": "Goku y Vegeta pelean por primera vez, empezando una rivalidad que durará toda la serie"
+		},
+        {
+		"integrantes": "Goku vs Freezer",
+		"inicio": "86",
+		"fin": "105",
+		"ganador": "Goku",
+		"link": "https://www.youtube.com/watch?v=RSEu2VDxi9Q&ab_channel=RubyFroste",
+		"descripcion": "Goku y Freezer se enfrentan por primera vez en el planeta Namekusei"
+		},
+        {
+		"integrantes": "Goku vs Cell Perfecto",
+		"inicio": "177",
+		"fin": "180",
+		"ganador": "Cell",
+		"link": "https://www.youtube.com/watch?v=NT8_LzMBFVc&ab_channel=gokuultrainstinto",
+		"descripcion": "Goku y Cell se enfrentan en el torneo de Cell"
+		},
+        {
+		"integrantes": "Goku vs Majin Vegeta",
+		"inicio": "229",
+		"fin": "233",
+		"ganador": "Inconclusa",
+		"link": "https://www.youtube.com/watch?v=AhRJ2lgmHXA&ab_channel=Facu",
+		"descripcion": "Goku y Majin Vegeta se enfrentan nuevamente"
+		},
+        {
+		"integrantes": "Goku vs Boo Pequeño",
+		"inicio": "279",
+		"fin": "286",
+		"ganador": "Goku",
+		"link": "https://www.youtube.com/watch?v=rrOyO9uLlZk&ab_channel=WORDDELANIME",
+		"descripcion": "Goku y Boo pequeño pelean en el planeta sagrado"
+		}
+	]    
 },
 {
     "id":"Batallas De Vegeta" ,
-    "description":[
-        {"id": ["Vegeta vs Goku","30","33","Vegeta","https://www.youtube.com/watch?v=cpmga78A2NY&ab_channel=LucasSaiyajinZ","Goku y Vegeta pelean por primera vez, empezando una rivalidad que durará toda la serie"]},
-        {"id": ["Vegeta vs Cell","156","162","Cell","https://www.youtube.com/watch?v=vDmfsINYyXw&ab_channel=MAJINVEGETATV","Vegeta pelea contra Cell en su segunda forma y más tarde en su forma perfecta"]},
-        {"id": ["Majin Vegeta vs Goku","229","233","Inconclusa","https://www.youtube.com/watch?v=AhRJ2lgmHXA&ab_channel=Facu","Goku y Majin Vegeta se enfrentan nuevamente"]},
-        {"id": ["Majin Vegeta vs Boo Gordo","235","237","Boo Gordo","https://www.youtube.com/watch?v=2zQ3vDjlM0w&ab_channel=Mu%C3%B1equitosTv","Majin Vegeta se enfrenta a Majin Boo en su versión inicial"]}
-        ]
-},
-{
-    "id":"Batallas De Cell",
-    "description": [
-        {"id": ["Cell vs Vegeta","156","162","Cell","https://www.youtube.com/watch?v=vDmfsINYyXw&ab_channel=MAJINVEGETATV","Vegeta pelea contra Cell en su segunda forma y más tarde en su forma perfecta"]},
-        {"id": ["Cell Perfecto vs Goku","177","180","Cell","https://www.youtube.com/watch?v=NT8_LzMBFVc&ab_channel=gokuultrainstinto","Goku y Cell se enfrentan en el torneo de Cell"]},
-        {"id": ["Cell Perfecto vs Gohan","181","191","Gohan","https://www.youtube.com/watch?v=CxD3rdRgb50&ab_channel=Manurex22","Gohan y Cell se enfrentan en el torneo de Cell"]}
-    ]
-},
-{
-    "id":"Batallas De Freezer",
-    "description": [
-        {"id": ["Freezer vs Vegeta","77","85","Freezer","https://www.youtube.com/watch?v=BI9dzjxPTkE&ab_channel=dragonballzcap%C3%ADtuloscompletos","Vegeta y Freezer se enfrentan en Namekusei"]},
-        {"id": ["Freezer vs Goku","86","105","Goku","https://www.youtube.com/watch?v=RSEu2VDxi9Q&ab_channel=RubyFroste","Goku y Freezer se enfrentan por primera vez en el planeta Namekusei"]},
-        {"id": ["Mecha Freezer vs Trunks","119","121","Trunks","https://www.youtube.com/watch?v=WUsvyU2UMuc&ab_channel=Alta%C3%AFr","Mecha Freezer se enfrenta a Trunks del futuro"]}
+    "infoDeFila": [
+		{
+		"integrantes": "Vegeta vs Cell",
+		"inicio": "156",
+		"fin": "162",
+		"ganador": "Cell",
+		"link": "https://www.youtube.com/watch?v=vDmfsINYyXw&ab_channel=MAJINVEGETATV",
+		"descripcion": "Vegeta pelea contra Cell en su segunda forma y más tarde en su forma perfecta"
+		},
+        {
+		"integrantes": "Majin Vegeta vs Goku",
+		"inicio": "229",
+		"fin": "233",
+		"ganador": "Inconclusa",
+		"link": "https://www.youtube.com/watch?v=AhRJ2lgmHXA&ab_channel=Facu",
+		"descripcion": "Goku y Majin Vegeta se enfrentan nuevamente"
+		},
+        {
+		"integrantes": "Majin Vegeta vs Boo Gordo",
+		"inicio": "235",
+		"fin": "237",
+		"ganador": "Boo Gordo",
+		"link": "https://www.youtube.com/watch?v=2zQ3vDjlM0w&ab_channel=Mu%C3%B1equitosTv",
+		"descripcion": "Majin Vegeta se enfrenta a Majin Boo en su versión inicial"
+		}
     ]
 },
 {
     "id":"Batallas De Gohan",
-    "description":[
-        {"id": ["Gohan vs Cell Perfecto","181","191","Gohan","https://www.youtube.com/watch?v=CxD3rdRgb50&ab_channel=Manurex22","Gohan y Cell se enfrentan en el torneo de Cell"]},
-        {"id": ["Gohan vs Dabura","226","227","Gohan","https://www.youtube.com/watch?v=BiE0Vimn7tg&ab_channel=BollywoodReporter","El guerrero que salvó la tierra, el Saiyan Gohan se prepara para tener una lucha contra el Rey de las tinieblas, el maligno Dabura."]},
-        {"id": ["Gohan vs Super-Boo","263","266","Super-Boo","https://www.youtube.com/watch?v=TdqcuGUouB4&ab_channel=EntretenimientoChingon","Gohan místico y Super-Boo se enfrentan"]}
+    "infoDeFila":[
+		{
+		"integrantes": "Gohan vs Cell Perfecto",
+		"inicio": "181",
+		"fin": "191",
+		"ganador": "Gohan",
+		"link": "https://www.youtube.com/watch?v=CxD3rdRgb50&ab_channel=Manurex22",
+		"descripcion": "Gohan y Cell se enfrentan en el torneo de Cell"
+		},
+        {
+		"integrantes": "Gohan vs Dabura",
+		"inicio": "226",
+		"fin": "227",
+		"ganador": "Gohan",
+		"link": "https://www.youtube.com/watch?v=BiE0Vimn7tg&ab_channel=BollywoodReporter",
+		"descripcion": "El guerrero que salvó la tierra, el Saiyan Gohan se prepara para tener una lucha contra el Rey de las tinieblas, el maligno Dabura."
+		},
+        {
+		"integrantes": "Gohan vs Super-Boo",
+		"inicio": "263",
+		"fin": "266",
+		"ganador": "Super-Boo",
+		"link": "https://www.youtube.com/watch?v=TdqcuGUouB4&ab_channel=EntretenimientoChingon",
+		"descripcion": "Gohan místico y Super-Boo se enfrentan"
+        }
     ]
+},
+{
+    "id":"Batallas De Freezer",
+    "infoDeFila": [
+		{
+		"integrantes": "Freezer vs Vegeta",
+		"inicio": "77",
+		"fin": "85",
+		"ganador": "Freezer",
+		"link": "https://www.youtube.com/watch?v=BI9dzjxPTkE&ab_channel=dragonballzcap%C3%ADtuloscompletos",
+		"descripcion": "Vegeta y Freezer se enfrentan en Namekusei"
+		},
+        {
+		"integrantes": "Freezer vs Goku",
+		"inicio": "86",
+		"fin": "105",
+		"ganador": "Goku",
+		"link": "https://www.youtube.com/watch?v=RSEu2VDxi9Q&ab_channel=RubyFroste",
+		"descripcion": "Goku y Freezer se enfrentan por primera vez en el planeta Namekusei"
+		},
+        {
+		"integrantes": "Mecha Freezer vs Trunks",
+		"inicio": "119",
+		"fin": "121",
+		"ganador": "Trunks",
+		"link": "https://www.youtube.com/watch?v=WUsvyU2UMuc&ab_channel=Alta%C3%AFr",
+		"descripcion": "Mecha Freezer se enfrenta a Trunks del futuro"
+		}
+    ]
+},
+{
+    "id":"Batallas De Cell",
+    "infoDeFila": [
+		{
+		"integrantes": "Cell vs Vegeta",
+		"inicio": "156",
+		"fin": "162",
+		"ganador": "Cell",
+		"link": "https://www.youtube.com/watch?v=vDmfsINYyXw&ab_channel=MAJINVEGETATV",
+		"descripcion": "Vegeta pelea contra Cell en su segunda forma y más tarde en su forma perfecta"
+		},
+        {
+		"integrantes": "Cell Perfecto vs Goku",
+		"inicio": "177",
+		"fin": "180",
+		"ganador": "Cell",
+		"link": "https://www.youtube.com/watch?v=NT8_LzMBFVc&ab_channel=gokuultrainstinto",
+		"descripcion": "Goku y Cell se enfrentan en el torneo de Cell"
+		},
+        {
+		"integrantes": "Cell Perfecto vs Gohan",
+		"inicio": "181",
+		"fin": "191",
+		"ganador": "Gohan",
+		"link": "https://www.youtube.com/watch?v=CxD3rdRgb50&ab_channel=Manurex22",
+		"descripcion": "Gohan y Cell se enfrentan en el torneo de Cell"
+		}
+	]
 }
+
 ]
