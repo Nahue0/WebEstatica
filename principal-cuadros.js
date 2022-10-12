@@ -104,6 +104,8 @@ function mostrarElemento(posicion){
 
 	function cargarDatos(indice){
 		let divTitulo = document.getElementById('tituloCabecera');
+		let imagen = document.getElementById('imagen');
+		imagen.innerHTML = `<img src="${indice.picture}" alt="" id="imagen">`
 		divTitulo.innerHTML = indice.id;
 		
 		let divInformacion = indice.infoDeFila;

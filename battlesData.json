@@ -1,5 +1,6 @@
 [{
     "id":"Batallas De Goku",
+	"picture":"./imagenes/Imagen Cuadro/gokuCompleto.png",
     "infoDeFila": [
         {
 		"integrantes": "Goku vs Vegeta",
@@ -45,6 +46,7 @@
 },
 {
     "id":"Batallas De Vegeta" ,
+	"picture":"./imagenes/Imagen Cuadro/vegeta.png",
     "infoDeFila": [
 		{
 		"integrantes": "Vegeta vs Cell",
@@ -74,6 +76,7 @@
 },
 {
     "id":"Batallas De Gohan",
+	"picture":"./imagenes/Imagen Cuadro/gohan.png",
     "infoDeFila":[
 		{
 		"integrantes": "Gohan vs Cell Perfecto",
@@ -103,6 +106,7 @@
 },
 {
     "id":"Batallas De Freezer",
+	"picture":"./imagenes/Imagen Cuadro/freezer.webp",
     "infoDeFila": [
 		{
 		"integrantes": "Freezer vs Vegeta",
@@ -132,6 +136,7 @@
 },
 {
     "id":"Batallas De Cell",
+	"picture":"./imagenes/Imagen Cuadro/cell3.png",
     "infoDeFila": [
 		{
 		"integrantes": "Cell vs Vegeta",
