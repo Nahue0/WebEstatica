@@ -27,6 +27,7 @@ function cargaPrincipal(){
 			cabezas[j].style.display = "flex";
 		}
 		cabezas[j].addEventListener('click',function(){
+			
 			const ventanaCuadro = window.open('./cuadro.html');
 				ventanaCuadro.addEventListener('DOMContentLoaded',function(){
 				ventanaCuadro.mostrarElemento(j);
@@ -48,7 +49,8 @@ function cargaPrincipal(){
 			}
 
 			cabezas[j].addEventListener('click',function(){
-				const ventanaCuadro = window.open('./cuadro.html');
+					
+					const ventanaCuadro = window.open('./cuadro.html');
 					ventanaCuadro.addEventListener('DOMContentLoaded',function(){
 					ventanaCuadro.mostrarElemento(j);
 				});
@@ -58,7 +60,9 @@ function cargaPrincipal(){
 	)
 
 	cabezas[j].addEventListener('click',function(){
-		const ventanaCuadro = window.open('./cuadro.html');
+			
+			const ventanaCuadro = window.open('./cuadro.html');
+			
 			ventanaCuadro.addEventListener('DOMContentLoaded',function(){
 			ventanaCuadro.mostrarElemento(j);
 		});
@@ -90,6 +94,7 @@ function mostrarElemento(posicion){
 				console.log(indice);
 
 				cargarDatos(indice);
+				
 			}
 		};
 
@@ -114,7 +119,7 @@ function mostrarElemento(posicion){
 			divTabla.innerHTML+= `<div class='table-content' > ${infor.inicio} </div>`;
 			divTabla.innerHTML+= `<div class='table-content' > ${infor.fin} </div>`;
 			divTabla.innerHTML+= `<div class='table-content' > ${infor.ganador} </div>`;
-			divTabla.innerHTML+= `<div class='table-content' >  <a class = "mostrar" href="${infor.link}">Ver Video</a></div>`;
+			divTabla.innerHTML+= `<div class='table-content' >  <a href="${infor.link}">Ver Video</a></div>`;
 			divTabla.innerHTML+= `<div class='table-content' > <button class = "mostrar">Mostrar</button></div>`;
 			
 			divTablaDes.innerHTML+= `<div class='table-description' > ${infor.descripcion} </div>`;
@@ -122,5 +127,42 @@ function mostrarElemento(posicion){
 			i++;
 		}
 		
+		mostrarDescripcion();
+	}
+
+	function mostrarDescripcion(){
+		const descripcion = document.getElementsByClassName('table-description');
+		let i = 0;
+		let botones = document.getElementsByClassName("mostrar");
+		let botoneArray = Object.entries(botones);
 		
+		while(i < descripcion.length){
+			descripcion[i].style.display = "none";
+			i++;
+		}
+
+		i = 0;
+		// while(i<botones.length){
+		// 	botones[i].addEventListener('click',()=>{
+				
+		// 	});
+		// 	i++;
+		// }
+		
+		botoneArray.forEach((element,i)=>{
+			element[1].addEventListener('click',()=>{
+				if(descripcion[element[0]].style.display === "flex"){
+					descripcion[element[0]].style.display = 'none';
+				}else{
+					descripcion[element[0]].style.display = 'flex';
+				}
+			}
+
+			);
+		})
+		
+	};
+
+	function mostrarDes(i){
+		descripcion[i].style.display ='flex';
 	}
