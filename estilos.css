@@ -1,3 +1,19 @@
+/* ================= Media Query  ===========================*/
+@media (max-width: 600px){
+   .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+   .contenedorFlex{
+    order:1;
+    width: 100%;
+    justify-content: center;
+   }
+   #left-triangle {order: 2; }
+   #right-triangle{order: 3; }
+
+}
 /*--------------- ETIQUETAS ------------------*/
 body{
     /*width: 100%;*/
@@ -38,10 +54,8 @@ button:hover{
     height: 500px;
     display: flex;
     flex-direction:row;
-    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
     
 }
 .circulos{

@@ -1,3 +1,17 @@
+
+/* ================= Media Query  ===========================*/
+@media (max-width: 900px){
+   body{
+    height: 40cm;
+   }
+    .contenedor{
+    flex-direction: column;
+   }
+   .contenedor-tabla{
+    width: 100%;
+   }
+   
+ }
 /*--------------- ETIQUETAS ------------------*/
 body{
     
@@ -21,6 +35,10 @@ td{
 /*--------------- Clases ------------------*/
 .background{
     background-image: url(./imagenes/windowsGoku.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 0;
     
 }
 .contenedor{
