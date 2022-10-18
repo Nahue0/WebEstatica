@@ -1,4 +1,3 @@
-
 /* ================= Media Query  ===========================*/
 @media (max-width: 900px){
    body{
@@ -10,51 +9,31 @@
    .contenedor-tabla{
     width: 100%;
    }
-   
  }
+
 /*--------------- ETIQUETAS ------------------*/
 body{
-    
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-
-table {
-    background: rgba(63, 141, 231, 0.63) ;
-}
-
-td{
-    background: rgba(27, 65, 187, 0.603);
-    color: black;
-}
-
-
- 
-
 /*--------------- Clases ------------------*/
 .background{
-    background-image: url(./imagenes/windowsGoku.webp);
+    background-image: url(./imagenes/cuadro-fondo.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-bottom: 0;
-    
 }
 .contenedor{
     display: flex;
     align-items: center;
-    justify-content:flex-start;
-    
-
 }
 .contenedor-tabla{
     display: flex;
     flex-direction: column;
     gap : 20px
-    
 }
-
 .tabla{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -70,10 +49,8 @@ td{
     background-color: rgba(0, 38, 255, 0.589);
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 3px solid rgba(16, 209, 223, 0);
     border-radius: 30px;
-    
 }
 .table-content, .table-haddler{
     display: flex;
@@ -81,23 +58,19 @@ td{
     text-align: center;
     border-color: black;
 }
-
 .table-haddler{
-    align-items: center;
     font-size: 1.2em;
     font-weight: bold;
 }
-
 .table-content{
     font-size: 1.1em;
 }
-
-.table-description, p{
+.table-description{
     grid-column-start: 1;
     grid-column-end: 7;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .mostrar{
     background-color: rgb(0, 162, 255);
@@ -106,6 +79,7 @@ td{
     border: 3px solid rgb(16, 209, 223);
     border-radius: 30px;
 }
+
 /*--------------- ID ------------------*/
 #titulo{
     display: block;
@@ -114,15 +88,5 @@ td{
     transition: 0.5s;
 }
 #titulo:hover {
-    display: block;
-    margin: auto;
     width: 400px;
 }
-#oscuro{
-    text-align: center;
-    font-size:large;
-    filter: brightness(3);
-    background-color: aqua;
-}
-
-
