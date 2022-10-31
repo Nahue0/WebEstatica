@@ -52,6 +52,7 @@ function cargaPrincipal(){
 
 function cargaDeTabla(cabezas, j) {
 	cabezas[j].addEventListener('click', function () {
+		//const ventanaCuadro = window.open('./cuadro.html',"_self"); Si uso esto no me carga el cuadro.... PREGUNTAR!!!!!!!!!!!!!!!!!!!!!
 		const ventanaCuadro = window.open('./cuadro.html');
 		ventanaCuadro.addEventListener('DOMContentLoaded',function(){
 			ventanaCuadro.mostrarElemento(j);
@@ -68,7 +69,7 @@ function mostrarElemento(posicion){
 		if(this.readyState == 4 && this.status == 200){
 			let dtosBatallas = JSON.parse(this.responseText);
 			let indice = dtosBatallas[posicion];
-			console.log(indice);
+			
 			cargarDatos(indice);
 		}
 	};
@@ -87,6 +88,7 @@ function cargarDatos(indice){
 	let i = 0;
 	let j = 0;
 	let infor;
+	
 	while(i<divInformacion.length){
 		infor = divInformacion[i];
 		divTabla.innerHTML+= `<div class='table-content' > ${infor.integrantes} </div>`;
