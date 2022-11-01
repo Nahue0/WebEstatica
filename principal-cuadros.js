@@ -53,7 +53,7 @@ function cargaPrincipal(){
 function cargaDeTabla(cabezas, j) {
 	cabezas[j].addEventListener('click', function () {
 		//const ventanaCuadro = window.open('./cuadro.html',"_self"); Si uso esto no me carga el cuadro.... PREGUNTAR!!!!!!!!!!!!!!!!!!!!!
-		const ventanaCuadro = window.open('./cuadro.html');
+		const ventanaCuadro = window.open('./cuadro.html'/*,"_self" Esto evita que se abra una nueva tab, pero no carga el cuadro*/);
 		ventanaCuadro.addEventListener('DOMContentLoaded',function(){
 			ventanaCuadro.mostrarElemento(j);
 		});
