@@ -51,17 +51,24 @@ function cargaPrincipal(){
 };
 
 function cargaDeTabla(cabezas, j) {
+
 	cabezas[j].addEventListener('click', function () {
-		//const ventanaCuadro = window.open('./cuadro.html',"_self"); Si uso esto no me carga el cuadro.... PREGUNTAR!!!!!!!!!!!!!!!!!!!!!
-		const ventanaCuadro = window.open('./cuadro.html'/*,"_self" Esto evita que se abra una nueva tab, pero no carga el cuadro*/);
+		//Guardo la ventana actual INDEX.html en una variable
+		let ventanaIndex = window;
+		const ventanaCuadro = window.open('./cuadro.html');
 		ventanaCuadro.addEventListener('DOMContentLoaded',function(){
-			ventanaCuadro.mostrarElemento(j);
+			//le paso la ventana a la otra ventana cuadro.html
+			ventanaCuadro.mostrarElemento(j,ventanaIndex);
+			
 		});
 	});
 };
 
-function mostrarElemento(posicion){
-	// Carga de json
+function mostrarElemento(posicion,ventanaIndex){
+	//Cierra la vetana index y carga el cudro
+	ventanaIndex.close();
+	//Cargamos el json
+	console.log(posicion)
 	const xhttp = new XMLHttpRequest();
   	xhttp.open('GET','battlesData.json',true);
 	xhttp.send();
@@ -69,7 +76,6 @@ function mostrarElemento(posicion){
 		if(this.readyState == 4 && this.status == 200){
 			let dtosBatallas = JSON.parse(this.responseText);
 			let indice = dtosBatallas[posicion];
-			
 			cargarDatos(indice);
 		}
 	};
